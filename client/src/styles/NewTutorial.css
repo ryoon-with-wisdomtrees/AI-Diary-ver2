@@ -1,0 +1,333 @@
+.diaryTutoPaper {
+    /* border: 1px solid mediumspringgreen; */
+    width: 100%;
+    min-width: 25em;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 0.625em;
+    overflow: hidden;
+  }
+  
+  .diaryTutoPaper_content {
+    /* border: 1px solid yellow; */
+    /* position: absolute; */
+    /* width: 100%;
+    max-width: 100%; */
+    height: 100%;
+    width: 99%;
+    top: 1.875em;
+    right: 0;
+    bottom: 33.75em;
+    left: 3.75em;
+    /* background: linear-gradient(transparent, transparent 28px, #eee7db 28px);
+    background-size: 30px 30px; */
+  }
+  
+  .diaryTuto {
+    /* border: 1px solid midnightblue; */
+    padding: 1.875em;
+    padding-top: 1.5em;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    font-size: 2vmin;
+  }
+  
+  .diaryTuto input,
+  textarea,
+  button {
+    border-radius: 0.3125em;
+    background: #eee7db;
+    border: 0 solid black;
+    font-size: 0.9375em;
+  }
+  .diaryTuto__container {
+    /* border: 1px solid #00fa9a; */
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .diaryTutoTitle {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    
+  }
+  .tutoHighlight {
+    box-shadow: inset 0 -23px 0 #e89b3d;
+    display: inline;
+  }
+  
+  .diaryTuto__container form {
+    width: 100%;
+    height: 100%;
+  }
+  .diaryTuto__nonDalle {
+    /* border: 1px solid blue; */
+    width: 65%;
+    height: 100%;
+    margin: 0em;
+    float: left;
+  }
+  .diaryTuto__nonDalle input,
+  select,
+  button,
+  option {
+    height: 1.875em;
+  }
+
+  .diaryTuto__container input:focus {
+    /* border-color: #0982f0; */
+    outline: 2px solid #c1ab86;
+    transition: 0.1s;
+  }
+  
+  
+  .diaryTuto__nonDalle .setion0 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.9375em;
+  }
+  .diaryTuto__nonDalle .setion1 {
+    margin-top: 0.125em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.9375em;
+  }
+  
+  .diaryTuto__nonDalle .setion1 input {
+    width: 40%;
+    text-align: center;
+  }
+  
+  .diaryTuto__nonDalle .setion1 input:hover {
+    transition: 0.3s;
+    opacity: 1;
+    outline: 2px solid #c1ab86;
+    width: 42%;
+  }
+  
+  .diaryTuto__nonDalle .setion2 {
+    width: 100%;
+    margin-bottom: 0.625em;
+  }
+  .diaryTuto__nonDalle .setion2 .tags {
+    padding-top: 0.625em;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .diaryTuto__nonDalle .setion2 input {
+    text-align: center;
+    width: 25%;
+    margin: 0.3125em;
+    caret-color: #604e2e;
+  }
+  .diaryTuto__nonDalle .setion2 input:hover {
+    transition: 0.3s;
+    opacity: 1;
+    outline: 2px solid #c1ab86;
+    width: 27%;
+  }
+  .diaryTuto__nonDalle .setion2 button {
+    width: 25%;
+    margin: 0.3125em;
+    height: 2em;
+    background: #c1ab86;
+  }
+  .diaryTuto__nonDalle .setion2 button:hover {
+    transition: 0.3s;
+    opacity: 1;
+    background: #604e2e;
+    color: white;
+    width: 30%;
+  }
+  .diaryTuto__nonDalle .setion3 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25em;
+  }
+  .diaryTuto__nonDalle .setion3 .text {
+    margin-bottom: 0.625em;
+  }
+  .diaryTuto__nonDalle .setion3 select {
+    margin-left: 0.625em;
+    border-radius: 0.25em;
+    border: 1px solid #c1ab86;
+    outline: 0 none;
+    text-align: center;
+    width: 35%;
+    height: 2.5em;
+  }
+  /* .diaryTuto__nonDalle .setion3 select:focus {
+    border: 2px solid #c1ab86;
+    transition: 0.1s;
+  } */
+  .diaryTuto__nonDalle .setion3 .selectBox .select {
+    background: transparent;
+    outline: 0 none;
+    padding: 0 5px;
+    position: relative;
+    z-index: 3;
+  }
+  .diaryTuto__nonDalle .setion3 .selectBox .select option {
+    color: #c1ab86;
+    padding: 0.1875em 0;
+    font-size: 1em;
+    border-radius: 0.25em;
+    text-align: center;
+  }
+  .diaryTuto__nonDalle .setion3 .selectBox .icoArrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 2.1875em;
+    height: inherit;
+    /* border-left: 2px solid lightcoral; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .diaryTuto__nonDalle .setion3 .selectBox .icoArrow img {
+    width: 50%;
+    transition: 0.3s;
+    /* // 부드럽게 회전 */
+  }
+  
+  .diaryTuto__nonDalle .setion3 .selectBox .select:focus + .icoArrow img {
+    transform: rotate(180deg);
+  }
+  
+  .diaryTuto__nonDalle .setion4 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25em;
+    margin-left: 0.3125em;
+    width: 95%;
+    height: 50%;
+  }
+  .diaryTuto__nonDalle .setion4 .text {
+    margin-bottom: 0.625em;
+  }
+  .diaryTuto__nonDalle .setion4 textarea {
+    width: 100%;
+    height: 100%;
+    padding: 0.625em;
+    font-size: 1.25em;
+    overflow: auto;
+    resize: vertical;
+  }
+  .diaryTuto__nonDalle .setion4 textarea:focus {
+    outline: 2px solid #c1ab86;
+  }
+  
+  .diaryTuto__nonDalle .setion5 {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.25em;
+    margin-left: 0.3125em;
+  }
+  .diaryTuto__nonDalle .setion5 .text {
+    margin-bottom: 0.625em;
+  }
+  
+  .diaryTuto__nonDalle .setion5 select {
+    width: 35%;
+    height: 2.5em;
+    margin-left: 0.625em;
+    border-radius: 0.25em;
+    border: 1px solid #c1ab86;
+    outline: 0 none;
+    text-align: center;
+    margin-right: 0.3125em;
+  }
+  
+  .diaryTuto__nonDalle .setion5 button {
+    width: 35%;
+    margin-right: 0.3125em;
+    text-align: center;
+  }
+  
+  .diaryTuto__nonDalle .setion5 button:hover {
+    width: 40%;
+    opacity: 1;
+    background: #604e2e;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .diaryTuto__dalle {
+    /* border: 1px solid violet; */
+    position: relative;
+    width: 32%;
+    height: 100%;
+    float: right;
+    margin: 0em;
+    /* padding: 3em; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .diaryTuto__dalle_img {
+    border: 1px solid #eee7db;
+    background: #c1ab86;
+    border-radius: 0.3125em;
+    width: 100%;
+    height: 50%;
+    margin-top: 1em;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  
+  .diaryTuto__dalle_img img {
+    margin-top: 1em;
+    border-radius: 0.3125em;
+    border: 1px solid #ffff;
+    position: absolute;
+    z-index: 9999;
+    width: 90%;
+  }
+  
+  .diaryTuto__dalle_text {
+    border: 1px solid #eee7db;
+    background: #ffff;
+    /* color: #eee7db; */
+    border-radius: 0.3125em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 10%;
+    margin-top: 105%;
+    text-align: center;
+  }
+  
+  .diaryTuto__dalle_none {
+    margin-top: 1em;
+    border-radius: 0.3125em;
+    background: #ffff;
+    color: #604e2e;
+    border: 1px solid #ffff;
+    position: absolute;
+    /* z-index: 9999; */
+    width: 90%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  

@@ -1,0 +1,179 @@
+/* 기본 구조 */
+.wrap {
+    max-width: 90%;
+    max-height: 50%; 
+    /* margin:50px auto; */
+    margin-left: 4%;
+    background:#ece6cc;
+}
+
+/* 가로 스크롤 적용 */
+.scroll__wrap {
+    display: flex;
+    overflow-x:auto; 
+    white-space:nowrap; 
+    font-size: 0;
+    /* height: 450px; */
+    
+}
+.scroll__wrap::-webkit-scrollbar {
+    width: 0.5rem;  /*스크롤바의 너비*/
+}
+.scroll__wrap::-webkit-scrollbar-thumb {
+    height: 0.5%; /* 스크롤바의 길이 */
+    background: rgba(226, 113, 42, 0.768); /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+.scroll__wrap::-webkit-scrollbar-track {
+    background: rgb(195, 192, 192);  /*스크롤바 뒷 배경 색상*/
+}
+.scroll__wrap::-webkit-scrollbar-button {
+    display: none; /* 스크롤 바 상 하단 버튼 */
+} 
+
+
+/* .scroll--element {
+    display:inline-block; 
+    width:300px; 
+    height:300px; 
+    border:2px 
+    solid #222; 
+    background:#fff; 
+    font-size:16px; 
+    line-height: 150px; 
+    text-align:center;
+} */
+
+.scroll--element + .scroll--element {
+    margin-left: 5%;
+}
+
+
+/* 카드 디자인 */
+.modal_card_list_container{
+    display: flex;
+    flex-wrap: nowrap;
+    white-space:nowrap; 
+    
+    /* overflow: scroll; */
+}
+
+.modal_card_container {
+    background: #fff;
+    width: 10.5rem;
+    height: 10.5rem ;
+    max-height: 224px;
+    /* width: 300px;
+    height: 300px; */
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0.2, 0.2, 0.2, 0.2);
+    
+    /* display: flex; */
+    padding: 0 0 0 0;
+    overflow-x: hidden;
+
+    /* margin-left: 5rem;
+    margin-bottom: 5rem; */
+    margin: 2rem;
+    position: relative;
+}
+
+/* .modal_cards_form {
+    padding: 2rem 2rem 2rem 2rem;
+    margin-left: 1rem;
+} */
+
+/* 카드의 당근 아이콘 배치 및 이미지 크기 조절 */
+.modal_img_pod {
+    /* height: 100px;
+    width: 100px; */
+    height: 3.4rem;
+    width: 2.5rem;
+    max-width: 40px;
+
+    z-index: 10;
+    /* box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3); */
+    border-radius: 0%;
+    
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.carroticon {
+    /* height: 4.5rem;
+    width: 3.5rem; */
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+}
+ /* 날짜 스타일 */
+h2 { 
+    margin: 1.5rem 0 1rem 0;
+    color: #333;
+    font-size: 0.7rem;
+    text-align: center;
+    
+}
+/* 제목 스타일 */
+h1 {
+    margin: 0 0 1.5rem 0;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+
+}
+
+p {
+    display: block;
+    margin: auto;  
+    color: #333;
+    font-size: 1.5rem;
+    line-height: 1.45;
+}
+
+.modal_cards_btn {
+    border: none;
+    outline: none;
+    text-decoration-line: none;
+    /* display: inline-block; */
+
+    margin: 0.5rem 0 0 0;
+    background:rgba(226, 113, 42, 0.768);
+    color: black;
+    padding: 0 1rem 0 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+
+    display: block;
+    margin: auto;    
+    cursor: pointer;
+
+}
+
+/* 달별 디자인 */
+.pagination {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.page-item {
+    border: none;
+    outline: none;
+    background: none;
+    margin-left: 1rem;
+
+    display: inline;
+}
+.page-item-notnow {
+  font-size: 1rem;
+  background: none;
+}

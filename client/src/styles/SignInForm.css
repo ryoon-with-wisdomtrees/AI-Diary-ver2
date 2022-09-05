@@ -1,0 +1,88 @@
+.siginIn_form {
+  /* border: 1px solid #000000; */
+  position: absolute;
+  margin-left: 0%;
+  /* width: 30%; */
+  padding: auto;
+  margin: auto;
+  font-size: 2.5vmin;
+  z-index: 9999;
+  margin-bottom: 2rem;
+
+  color: rgb(255, 0, 0);
+}
+
+.siginIn_form-input {
+  outline: 2px solid rgb(255, 255, 255);
+  border: 2px solid rgb(255, 0, 0);
+  background-color: rgb(255, 255, 255);
+
+  border-radius: 0.25em;
+  margin: 0.5em 0;
+  /* outline: none; */
+  width: 37vmin;
+  height: 4.5vmin;
+  padding: 0.5em;
+  box-sizing: border-box;
+  transition: 0.3s;
+  
+}
+
+.siginIn_form-input:focus {
+  outline: 3px solid rgb(255, 255, 255);
+  border: 3px solid rgb(255, 46, 46);
+  background-color: rgb(255, 255, 255);
+
+  border-radius: 0.25em;
+  margin: 0.5em 0;
+  /* outline: none; */
+  width: 37vmin;
+  height: 4.5vmin;
+  padding: 0.5em;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.siginIn_form-button {
+  background-color: rgb(123, 82, 235);
+  border: rgb(118, 77, 230);
+  color: rgb(255, 255, 255);
+  border-radius: 0.25em;
+  height: 5vmin;
+  width: 30%;
+  margin-top: 3%;
+}
+
+.siginIn_form-button:hover {
+  background-color: rgb(113, 69, 234);
+  border: rgb(109, 66, 229);
+  color: rgb(255, 255, 255);
+  border-radius: 0.25em;
+  height: 5vmin;
+  /* width: 32%; */
+  transition: 0.3s;
+}
+
+/* .siginIn_form-button{
+  outline: 2px solid rgb(173, 126, 234);
+  border:2px solid rgb(173, 126, 234);
+  background-color:rgb(173, 126, 234);
+	width:30%;
+	border-radius:4px;
+	margin: 4px 0;
+	padding:4px;
+	box-sizing: border-box;
+	transition:.3s;
+} */
+
+/* .siginIn_form-input:focus{
+  outline: 2px solid rgb(255, 255, 255);
+  border:2px solid rgb(255, 46, 46);
+  background-color:rgb(255, 255, 255);
+	width:100%;
+	border-radius:4px;
+	margin: 8px 0;
+	padding:8px;
+	box-sizing: border-box;
+	transition:.3s;
+} */

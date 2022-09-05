@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Handlee);
+@font-face {
+  font-family: "gyuri";
+  src: url("./font/gyuri.ttf");
+}
+@font-face {
+  font-family: "abba";
+  src: url("./font/nanum_abba.ttf");
+}
+@font-face {
+  font-family: "hippy";
+  src: url("./font/나눔손글씨 바른히피.ttf");
+}
+@font-face {
+  font-family: "godding";
+  src: url("./font/나눔손글씨 고딕 아니고 고딩.ttf");
+}
+@font-face {
+  font-family: "wife";
+  src: url("./font/나눔손글씨 나의 아내 손글씨.ttf");
+}
+@font-face {
+  font-family: "neurit";
+  src: url("./font/나눔손글씨 느릿느릿체.ttf");
+}
+
+@font-face {
+  font-family: "bumsom ";
+  src: url("./font/나눔손글씨 범솜체.ttf");
+}
+
+@font-face {
+  font-family: "mom";
+  src: url("./font/나눔손글씨 빵구니맘 손글씨.ttf");
+}
+
+@font-face {
+  font-family: "well";
+  src: url("./font/나눔손글씨 잘하고 있어.ttf");
+}
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  /* background-color: #e5e5e5; */
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "hippy";
+}
+
+/* 테블릿 세로 (해상도 768px ~ 1023px)*/
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .main {
+    max-width: 500px;
+    height: 100%;
+  }
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .main {
+    max-width: 480px;
+    height: 100%;
+  }
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
+
+@media all and (max-width: 479px) {
+  .main {
+    max-width: 400px;
+    height: 100%;
+  }
+}
+
+#diaryMain_page {
+  z-index: 9998;
+  width: 60vw;
+  height: 100vh;
+  background-image: url("./img/main_bg_4.svg");
+  background-size: cover;
+  border-radius: 0px 50px 0px 0px;
+}
+
+#wrapperpage {
+  display: flex;
+  flex-direction: row;
+}
