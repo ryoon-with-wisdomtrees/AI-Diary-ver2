@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 
@@ -8,12 +9,14 @@ const authMiddleware = require("./utils/authMiddleware");
 const transeRouter = require("./routes/papago");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-
+// const config = require("./config/key");
+const port = process.env.PORT || 80;
 const app = express();
-mongoose.connect("mongodb://localhost:27017/mydiary");
+mongoose.connect(process.env.MONGO_URI);
 
 mongoose.connection.on("connected", () => {
   console.log("DB connect success");
+  console.log(port);
 });
 
 mongoose.connection.on("error", (err) => {
@@ -33,7 +36,7 @@ app.use("/diary", authMiddleware, diaryRouter);
 app.use("/user", userRouter);
 //papago url 경로 라우팅
 app.use("/translate", transeRouter);
-const port = process.env.PORT || 8080;
+
 app.listen(port, () => {
   console.log("server open");
 });
