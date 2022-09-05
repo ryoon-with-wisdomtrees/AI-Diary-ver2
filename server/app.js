@@ -10,7 +10,9 @@ const transeRouter = require("./routes/papago");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 // const config = require("./config/key");
-const port = process.env.PORT || 80;
+const dev = process.env.NODE_ENV !== "production";
+const prod = process.env.NODE_ENV === "production";
+const port = prod ? process.env.PORT : 80;
 const app = express();
 mongoose.connect(process.env.MONGO_URI);
 
@@ -38,5 +40,5 @@ app.use("/user", userRouter);
 app.use("/translate", transeRouter);
 
 app.listen(port, () => {
-  console.log("server open");
+  console.log(`server open. port: ${port}`);
 });
