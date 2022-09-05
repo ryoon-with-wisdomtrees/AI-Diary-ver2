@@ -24,7 +24,7 @@ const DiaryNav = () => {
   //--------------kakao oauth
   const REST_API_KEY = "7d3a56396c0500b913cedacc843ff47a"; //보통은 이런 고유 상수키값은 어떻게 관리하는지, 따로 lock을 걸어두는지. 이게 .env인지.물어볼것
   // const REDIRECT_URI = "http://118.67.131.173:8080/oauth/kakao/callback";
-  const REDIRECT_URI = "http://3.35.60.49:80/oauth/kakao/callback";
+  const REDIRECT_URI = "http://3.35.60.49:8080/oauth/kakao/callback";
   const KAKAO_OAUTH_URI = `https:/kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
 
   const onClickLogin = () => {

@@ -12,7 +12,7 @@ const bodyParser = require("body-parser");
 // const config = require("./config/key");
 const dev = process.env.NODE_ENV !== "production";
 const prod = process.env.NODE_ENV === "production";
-const port = prod ? process.env.PORT : 80;
+const port = prod ? process.env.PORT : 8080;
 const app = express();
 mongoose.connect(process.env.MONGO_URI);
 

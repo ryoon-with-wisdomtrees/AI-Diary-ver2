@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d8ced48d.css",
-    "main.js": "/static/js/main.280116a5.js",
+    "main.js": "/static/js/main.7733b5ba.js",
     "static/media/나눔손글씨 고딕 아니고 고딩.ttf": "/static/media/나눔손글씨 고딕 아니고 고딩.6fcd73a2543a3fc88a99.ttf",
     "static/media/gyuri.ttf": "/static/media/gyuri.7efa0c64f91d84bc96a7.ttf",
     "static/media/나눔손글씨 잘하고 있어.ttf": "/static/media/나눔손글씨 잘하고 있어.5031cbc19dc8c53ac6aa.ttf",
@@ -18,10 +18,10 @@
     "static/media/bubble.svg": "/static/media/bubble.8c5c24a7975212277d64f19e865ddc09.svg",
     "index.html": "/index.html",
     "main.d8ced48d.css.map": "/static/css/main.d8ced48d.css.map",
-    "main.280116a5.js.map": "/static/js/main.280116a5.js.map"
+    "main.7733b5ba.js.map": "/static/js/main.7733b5ba.js.map"
   },
   "entrypoints": [
     "static/css/main.d8ced48d.css",
-    "static/js/main.280116a5.js"
+    "static/js/main.7733b5ba.js"
   ]
 }
