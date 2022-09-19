@@ -1,7 +1,6 @@
 require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
-
 const diaryRouter = require("./routes/diary");
 const userRouter = require("./routes/user");
 const authRouter = require("./routes/oauth");
@@ -9,16 +8,21 @@ const authMiddleware = require("./utils/authMiddleware");
 const transeRouter = require("./routes/papago");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-// const config = require("./config/key");
+
 const dev = process.env.NODE_ENV !== "production";
 const prod = process.env.NODE_ENV === "production";
-const port = prod ? process.env.PORT : 8080;
 const app = express();
-mongoose.connect(process.env.MONGO_URI);
+
+const appConfig = prod
+  ? require("../../AI-Diary-ver2/server/application.prod.json")
+  : require("../../AI-Diary-ver2/server/application.dev.json");
+
+console.log(appConfig);
+mongoose.connect(appConfig.MONGO_URI);
 
 mongoose.connection.on("connected", () => {
   console.log("DB connect success");
-  console.log(port);
+  console.log(appConfig.PORT);
 });
 
 mongoose.connection.on("error", (err) => {
@@ -39,6 +43,6 @@ app.use("/user", userRouter);
 //papago url 경로 라우팅
 app.use("/translate", transeRouter);
 
-app.listen(port, () => {
-  console.log(`server open. port: ${port}`);
+app.listen(appConfig.PORT, () => {
+  console.log(`server open. port: ${appConfig.PORT}`);
 });

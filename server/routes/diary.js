@@ -57,7 +57,7 @@ router.post(
         tag2: tag2,
         tag3: tag3,
         img_url: img_url,
-        month: new Date().getMonth()+1,
+        month: new Date().getMonth() + 1,
         hidden: hidden,
       });
 
@@ -152,8 +152,9 @@ router.get("/:user_id/:month/getModalList", async (req, res, next) => {
   // const page = Number(req.query.page || 1); // req.query.page가 null or undifind면 1을 넣어라. 즉, default = 1
   // const perPage = Number(req.query.perPage || 10);
   const total = await Diary.countDocuments({});
-  const diaries = await Diary.find({ user_id }).find({month})
-    .sort({ createdAt: -1 }) //마지막으로 작성된 게시글을 첫번째 인덱스로 가져옴
+  const diaries = await Diary.find({ user_id })
+    .find({ month })
+    .sort({ createdAt: -1 }); //마지막으로 작성된 게시글을 첫번째 인덱스로 가져옴
   //   .skip(perPage * (page - 1)) //ex> 2페이지라면 5번부터
   //   .limit(perPage); // 6개씩 가져와줘.
   const totalPage = Math.ceil(total);
@@ -170,7 +171,7 @@ router.get("/:shortId/view", async (req, res, next) => {
     const diary = await Diary.findOne({ shortId });
     res.json(diary);
   } catch (e) {
-    next(e);  
+    next(e);
   }
 });
 
@@ -210,7 +211,7 @@ router.get("/:user_id/getOtherList", async (req, res, next) => {
     next("Please enter a number greater than 1"); //page가 1보다 작다면 오류처리.
     return;
   }
-  console.log("qqqqqqqqqqqqqqqqqqqqqqqqq");
+
   //({user_id: {$ne: user_id}})
   const page = Number(req.query.page || 1); // req.query.page가 null or undifind면 1을 넣어라. 즉, default = 1
   const perPage = Number(req.query.perPage || 6);
@@ -221,7 +222,7 @@ router.get("/:user_id/getOtherList", async (req, res, next) => {
     .skip(perPage * (page - 1)) //ex> 2페이지라면 5번부터
     .limit(perPage); // 6개씩 가져와줘.
   const totalPage = Math.ceil(total / perPage);
-  console.log("ssssssssssssssssssssssssss");
+
   // console.log(diaries);
   res.json({ diaries, totalPage });
 });
@@ -268,7 +269,7 @@ router.post("/:shortId/update", async (req, res, next) => {
     console.log(updatedDate);
     await Diary.updateOne(
       { shortId },
-      { $set: { content, emotion, title, updatedDate,hidden } }
+      { $set: { content, emotion, title, updatedDate, hidden } }
     );
     res.json({ result: "수정완료" });
   } catch (e) {
