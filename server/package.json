@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "set NODE_ENV=development nodemon app.js",
-    "start": "set NODE_ENV=production node app.js"
+    "start": "set NODE_ENV=production node app.js",
+    "heroku-postbuild": "npx webpack"
   },
   "author": "",
   "license": "ISC",
