@@ -1,0 +1,42 @@
+{
+  "name": "ai-diary-ver2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./server/index.js",
+  "engine": {
+    "node": "16.13.2",
+    "npm": "8.3.1"
+  },
+  "author": "Ryoon Cheon",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\"",
+    "backend": "nodemon server/index.js",
+    "frontend": "npm run front --prefix client",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SphereSRYN/AI-Diary-ver2.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.2",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.34",
+    "mongoose": "^6.5.0",
+    "mongoose-sequence": "^5.3.1",
+    "nanoid": "^3.3.4",
+    "nodemailer": "^6.7.7",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
